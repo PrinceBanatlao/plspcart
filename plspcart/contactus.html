@@ -1,0 +1,161 @@
+<!-- contactus.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plspcart - Contact Us</title>
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://media.istockphoto.com/id/898475764/vector/shopping-trolley-cart-icon-in-green-circle-vector.jpg?s=612x612&w=0&k=20&c=W_b90qFRpj_FyLyI19xWqB6EoNSuJYwMSN9nnKkE9Hk=" alt="plspcart Logo" class="logo-icon">
+                <span>plspcart</span>
+                <span class="subtitle">Official University Store</span>
+            </div>
+            <nav class="nav-links">
+                <a href="landing.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+                <button onclick="openModal('loginModal')" class="nav-signin">Sign In</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>We're here to help! Reach out to us with any questions, feedback, or support needs.</p>
+        <div class="contact-details">
+            <div class="contact-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email Icon" class="contact-icon">
+                <h3>Email</h3>
+                <p>uniforms@university.edu</p>
+            </div>
+            <div class="contact-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Phone Icon" class="contact-icon">
+                <h3>Phone</h3>
+                <p>+1 (123) 456-7890</p>
+            </div>
+            <div class="contact-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/535/535137.png" alt="Location Icon" class="contact-icon">
+                <h3>Location</h3>
+                <p>123 University Ave, Campus City, 12345</p>
+            </div>
+        </div>
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="column">
+                <h4>plspcart</h4>
+                <p>Your trusted university uniform store since 2020</p>
+            </div>
+            <div class="column">
+                <h4>Shop</h4>
+                <ul>
+                    <li>Uniforms</li>
+                    <li>PE Wear</li>
+                    <li>Lab Coats</li>
+                    <li>Accessories</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Support</h4>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>FAQ</li>
+                    <li>Shipping Info</li>
+                    <li>Returns</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Legal</h4>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                    <li>Cookie Policy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 plspcart - Official University Uniform Store. All rights reserved.</p>
+            <p>For inquiries, contact us at uniforms@university.edu</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <img src="https://media.istockphoto.com/id/898475764/vector/shopping-trolley-cart-icon-in-green-circle-vector.jpg?s=612x612&w=0&k=20&c=W_b90qFRpj_FyLyI19xWqB6EoNSuJYwMSN9nnKkE9Hk=" alt="Logo" class="modal-logo">
+            <h2>Welcome Back</h2>
+            <p>Sign in to your plspcart account to continue shopping</p>
+            <form>
+                <label for="student-id">Student ID</label>
+                <input type="text" id="student-id" placeholder="2024-12345">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <a href="#" class="forgot">Forgot password?</a>
+                <button type="submit" class="sign-in-btn">Sign In</button>
+            </form>
+            <p class="new">NEW TO PLSPCART?</p>
+            <button onclick="switchModal('loginModal', 'signupModal')" class="create-account">Create an Account</button>
+            <p class="secure">Official University Uniform Store • Secure Login</p>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signupModal')">&times;</span>
+            <img src="https://media.istockphoto.com/id/898475764/vector/shopping-trolley-cart-icon-in-green-circle-vector.jpg?s=612x612&w=0&k=20&c=W_b90qFRpj_FyLyI19xWqB6EoNSuJYwMSN9nnKkE9Hk=" alt="Logo" class="modal-logo">
+            <h2>Create Your Account</h2>
+            <p>Join thousands of students shopping at plspcart</p>
+            <span class="verification">Student Verification Required</span>
+            <form>
+                <label for="signup-student-id">Student ID</label>
+                <input type="text" id="signup-student-id" placeholder="2024-12345">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Juan">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Dela Cruz">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="juan.delacruz@university.edu">
+                <label for="program">Academic Program</label>
+                <select id="program">
+                    <option>Select your program</option>
+                </select>
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" placeholder="Min. 6 characters">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm password">
+                <div class="agreement">
+                    <p>By creating an account, you agree to:</p>
+                    <ul>
+                        <li>Terms of Service and Privacy Policy</li>
+                        <li>Receive order updates via email</li>
+                        <li>Official university uniform guidelines</li>
+                    </ul>
+                </div>
+                <button type="submit" class="create-btn">Create Account</button>
+            </form>
+            <p class="already">ALREADY HAVE AN ACCOUNT?</p>
+            <button onclick="switchModal('signupModal', 'loginModal')" class="sign-in-instead">Sign In Instead</button>
+            <p class="secure">Official University Uniform Store • Secure Registration</p>
+        </div>
+    </div>
+
+    <script src="landing.js"></script>
+</body>
+</html>

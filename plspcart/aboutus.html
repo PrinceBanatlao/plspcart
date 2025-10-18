@@ -1,0 +1,166 @@
+<!-- aboutus.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plspcart - About Us</title>
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://media.istockphoto.com/id/898475764/vector/shopping-trolley-cart-icon-in-green-circle-vector.jpg?s=612x612&w=0&k=20&c=W_b90qFRpj_FyLyI19xWqB6EoNSuJYwMSN9nnKkE9Hk=" alt="plspcart Logo" class="logo-icon">
+                <span>plspcart</span>
+                <span class="subtitle">Official University Store</span>
+            </div>
+            <nav class="nav-links">
+                <a href="landing.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+                <button onclick="openModal('loginModal')" class="nav-signin">Sign In</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="why-choose">
+        <h2>Why Choose Us</h2>
+        <p>Everything You Need for Your Academic Journey</p>
+        <p>We make getting your uniforms easy, fast, and affordable</p>
+        <div class="features">
+            <div class="feature">
+                <img src="https://media.istockphoto.com/id/898475764/vector/shopping-trolley-cart-icon-in-green-circle-vector.jpg?s=612x612&w=0&k=20&c=W_b90qFRpj_FyLyI19xWqB6EoNSuJYwMSN9nnKkE9Hk=" alt="Easy Shopping">
+                <h3>Easy Shopping</h3>
+                <p>Browse and order all your uniforms in minutes with our intuitive platform</p>
+            </div>
+            <div class="feature">
+                <img src="https://www.citypng.com/public/uploads/preview/product-delivery-truck-green-icon-701751695035801qsef3x01rh.png" alt="Good Quality">
+                <h3>Good Quality</h3>
+                <p>Get your uniforms with superior craftsmanship and durable materials</p>
+            </div>
+            <div class="feature">
+                <img src="https://media.istockphoto.com/id/1263990620/vector/quality-check-certified-badge-icon.jpg?s=612x612&w=0&k=20&c=SbbRgJJQZ8jAB4hU07vh5TZ-YeQjaF1_xAnQKoXCdh0=" alt="Quality Assured">
+                <h3>Quality Assured</h3>
+                <p>Official university-approved uniforms with guaranteed quality materials</p>
+            </div>
+            <div class="feature">
+                <img src="https://cdn.vectorstock.com/i/1000v/40/46/clock-24-7-icon-green-vector-19784046.jpg" alt="Buy and Sell">
+                <h3>Buy and Sell</h3>
+                <p>Shop for new uniforms or list your used ones anytime with ease</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Our Products</h2>
+        <p>Premium Quality Uniforms</p>
+        <p>From classic polo shirts to lab coats, we have everything you need</p>
+        <div class="product-items">
+            <div class="product">
+                <img src="https://i5.walmartimages.com/seo/Wonder-Nation-Juniors-School-Uniform-Polo-Shirt-with-Short-Sleeves_1e190386-06df-46f0-b470-c3456cf2836d.61edad22378d02bf95ea4c2b82397423.jpeg" alt="Polo Shirts">
+                <h3>Polo Shirts</h3>
+                <p>Premium cotton polo shirts in white and navy</p>
+                <p>From ₱450</p>
+            </div>
+            <div class="product">
+                <img src="https://323sports.com/image/386E56C2-6690-4391-9FDD-C0414168A609?width=1000&height=1000" alt="PE Uniforms">
+                <h3>PE Uniforms</h3>
+                <p>Complete PE set with shirt and shorts</p>
+                <p>From ₱550</p>
+            </div>
+            <div class="product">
+                <img src="https://s7.orientaltrading.com/is/image/OrientalTrading/13805842?$PDP_VIEWER_IMAGE$" alt="Lab Coats">
+                <h3>Lab Coats</h3>
+                <p>Professional lab coats for science programs</p>
+                <p>From ₱850</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to Buy or Sell Your Uniforms?</h2>
+        <p>Join thousands of students who trust plspcart to buy new uniforms or sell their used ones. Start today and enjoy the simplest way to manage your university wardrobe.</p>
+        <div class="cta-buttons">
+            <button class="start-shopping" onclick="openModal('loginModal')">Start Shopping Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="column">
+                <h4>plspcart</h4>
+                <p>Your trusted university uniform store since 2020</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 plspcart - Official University Uniform Store. All rights reserved.</p>
+            <p>For inquiries, contact us at uniforms@university.edu</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <img src="https://media.istockphoto.com/id/898475764/vector/shopping-trolley-cart-icon-in-green-circle-vector.jpg?s=612x612&w=0&k=20&c=W_b90qFRpj_FyLyI19xWqB6EoNSuJYwMSN9nnKkE9Hk=" alt="Logo" class="modal-logo">
+            <h2>Welcome Back</h2>
+            <p>Sign in to your plspcart account to continue shopping</p>
+            <form>
+                <label for="student-id">Student ID</label>
+                <input type="text" id="student-id" placeholder="2024-12345">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <a href="#" class="forgot">Forgot password?</a>
+                <button type="submit" class="sign-in-btn">Sign In</button>
+            </form>
+            <p class="new">NEW TO PLSPCART?</p>
+            <button onclick="switchModal('loginModal', 'signupModal')" class="create-account">Create an Account</button>
+            <p class="secure">Official University Uniform Store • Secure Login</p>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signupModal')">&times;</span>
+            <img src="https://media.istockphoto.com/id/898475764/vector/shopping-trolley-cart-icon-in-green-circle-vector.jpg?s=612x612&w=0&k=20&c=W_b90qFRpj_FyLyI19xWqB6EoNSuJYwMSN9nnKkE9Hk=" alt="Logo" class="modal-logo">
+            <h2>Create Your Account</h2>
+            <p>Join thousands of students shopping at plspcart</p>
+            <span class="verification">Student Verification Required</span>
+            <form>
+                <label for="signup-student-id">Student ID</label>
+                <input type="text" id="signup-student-id" placeholder="2024-12345">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Juan">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Dela Cruz">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="juan.delacruz@university.edu">
+                <label for="program">Academic Program</label>
+                <select id="program">
+                    <option>Select your program</option>
+                </select>
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" placeholder="Min. 6 characters">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm password">
+                <div class="agreement">
+                    <p>By creating an account, you agree to:</p>
+                    <ul>
+                        <li>Terms of Service and Privacy Policy</li>
+                        <li>Receive order updates via email</li>
+                        <li>Official university uniform guidelines</li>
+                    </ul>
+                </div>
+                <button type="submit" class="create-btn">Create Account</button>
+            </form>
+            <p class="already">ALREADY HAVE AN ACCOUNT?</p>
+            <button onclick="switchModal('signupModal', 'loginModal')" class="sign-in-instead">Sign In Instead</button>
+            <p class="secure">Official University Uniform Store • Secure Registration</p>
+        </div>
+    </div>
+
+    <script src="landing.js"></script>
+</body>
+</html>
